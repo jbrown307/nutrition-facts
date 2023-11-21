@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+/* 1rem is equal to 16px
+1rem, or 16px, is the defalut font size in html element*/
 html {
   font-size: 16px;
 }
@@ -43,3 +45,29 @@ To solve this, reset the box model by creating a * selector and giving it a box-
   border-bottom: 1px solid #888989;
   margin: 2px 0;
 }
+
+.large {
+  height: 10px;
+}
+
+.large, .medium {
+  background-color:black;
+  border:0;
+}
+/*The rem unit stands for root em, and is relative to the font size of the html element.
+0.85rem, which would calculate to roughly 13.6px*/
+.small-text {
+  font-size: 0.85rem;
+}
+
+/*flex-end : items are packed toward to end line*/
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calories-info h2 {
+  margin: 0;
+}
+
