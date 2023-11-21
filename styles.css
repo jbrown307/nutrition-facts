@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px;
+}
+
+/*The space-between value distributes the items evenly (with space between them) in the line. 
+The first item is on the start line, and the last one is on the end line. 
+The space-around value displays the items with space before, between, and after*/
+p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*by default, the browser includes the border and padding when determining an element's size.
+To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box*/
+.label {
+  border: 2px solid black;
+  box-sizing: border-box;
+  width: 275px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
